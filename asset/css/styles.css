@@ -12,6 +12,10 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
 }
@@ -104,8 +108,42 @@ input {
     background: transparent;
     padding: 12px 8px;
     transition: 0.3s;
+    cursor: pointer;
 }
+
 
 input:focus {
     border: #000000;
+}
+
+.sign_up {
+    margin-top: 30px;
+}
+
+button[type="submit"] {
+    background: var(--primary_color);
+    border: none;
+    padding: 12px 18px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .15);
+    font-family: inherit;
+    font-weight: 400;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+button[type="submit"]:hover{
+    background: #FFFFFF;
+    color: #000000;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .35);
+}
+
+.login__Link {
+    font-weight: 400;
+    margin-top: 30px;
+}
+
+b a{
+    font-family: inherit;
+    color: #000000;
 }

@@ -28,34 +28,50 @@
             <form action="#" method="post">
                 <div class="inputss">
                     <label for="firstname">First Name</label>
-                    <input type="text" name="firstname" id="firstname">
+                    <input type="text" name="firstname" id="firstname" required>
+                    <span></span>
                 </div>
 
                 <div class="inputss">
                     <label for="lastname">Last Name</label>
-                    <input type="text" name="lastname" id="lastname">
+                    <input type="text" name="lastname" id="lastname" required>
+                    <span></span>
                 </div>
 
                 <div class="inputss">
                     <label for="Email">Email</label>
-                    <input type="email" name="Email" id="Email">
+                    <input type="email" name="Email" id="Email" required>
+                    <span></span>
                 </div>
 
                 <div class="inputss">
                     <label for="phonenumber">Phone Number</label>
-                    <input type="number" name="phonenumber" id="phonenumber">
+                    <input type="tel" name="phonenumber" id="phonenumber" required>
+                    <span></span>
                 </div>
 
                 <div class="inputss">
                     <label for="Password">Password</label>
-                    <input type="password" name="Password" id="Password">
+                    <input type="password" name="Password" id="password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
+                    " required>
+                    <span></span>
                 </div>
 
                 <div class="inputss">
                     <label for="conf_password">Confirm Password</label>
-                    <input type="password" name="conf_password" id="conf_password">
+                    <input type="password" name="conf_password" id="conf_password" pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*$
+                    " required>
+                    <span></span>
+                </div>
+
+                <div class="sign_up">
+                    <button type="submit" id="submit">Create Account</button>
                 </div>
             </form>
+
+            <p class="login__Link">
+                Already have an account? <b><a href="#">Log in</a></b>
+            </p>
         </section>
     </main>
 </body>
